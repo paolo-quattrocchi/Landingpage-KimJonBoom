@@ -1,12 +1,29 @@
 :root {
     --primary-color: #7FB685;
     --text-color: #fff;
+    --text-shadow-primary: #818f82;
+    --text-cta: #e2dada;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+
+/*TYPOGRAFHY*/
+
+h1 {
+    text-shadow: 2px 2px var(--text-shadow-primary);
+    color: var(--primary-color);
+}
+
+.text-mygreen {
+    color: var(--primary-color);
 }
 
 #navbar {
     z-index: 9999;
     transition: 1s;
-    background-color: var(--primary-color) !important;
 }
 
 .navbar-icon {
@@ -16,7 +33,7 @@
 header {
     height: 100vh;
     min-height: 500px;
-    background: url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,4 +41,10 @@ header {
 
 .img-header {
     width: 500px;
+}
+
+#btn-CTA,
+#navbarCTAScroll {
+    background-color: var(--primary-color);
+    color: var(--text-cta);
 }
