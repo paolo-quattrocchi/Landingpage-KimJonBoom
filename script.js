@@ -8,11 +8,11 @@ if (window.innerWidth > 576) {
         //Il logo con la navbar compaiono solo quando si inizia a scrollare la pagina
 
         if (window.pageYOffset > 20) {
-            navbar.classList.remove('bg-transparent', 'd-none')
-            navbar.classList.add('bg-light', 'shadow')
+            navbar.classList.remove('bg-transparent')
+            navbar.classList.add('bg-green', 'shadow')
         } else {
-            navbar.classList.remove('bg-light', 'shadow')
-            navbar.classList.add('bg-transparent', 'd-none')
+            navbar.classList.remove('bg-green', 'shadow')
+            navbar.classList.add('bg-transparent')
         }
 
 
