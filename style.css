@@ -43,14 +43,14 @@ header {
     width: 500px;
 }
 
-<<<<<<< HEAD
 .img-staff{
     height: 300px;
     width: 300px;
-=======
+}
+
+
 #btn-CTA,
 #navbarCTAScroll {
     background-color: var(--primary-color);
     color: var(--text-cta);
->>>>>>> e7198c6d8c48aae87b9ae847697a5b06e3920b80
 }
