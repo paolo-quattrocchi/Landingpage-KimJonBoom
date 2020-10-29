@@ -1,5 +1,6 @@
 let navbar = document.querySelector('#navbar')
 let navbarBrand = document.querySelector('#navbarBrand')
+let navbarTextLogo = document.querySelector('#navbarTextLogo')
 let navbarCTAScroll = document.querySelector('#navbarCTAScroll')
 
 //Dallo schermo sm a xl
@@ -9,10 +10,14 @@ if (window.innerWidth > 576) {
 
         if (window.pageYOffset > 20) {
             navbar.classList.remove('bg-transparent')
-            navbar.classList.add('bg-green', 'shadow')
+            navbar.classList.add('bg-light', 'shadow')
+            navbarTextLogo.classList.add('text-mygreen')
+            navbarTextLogo.classList.remove('text-white')
         } else {
-            navbar.classList.remove('bg-green', 'shadow')
+            navbar.classList.remove('bg-light', 'shadow')
             navbar.classList.add('bg-transparent')
+            navbarTextLogo.classList.add('text-white')
+            navbarTextLogo.classList.remove('text-mygreen')
         }
 
 

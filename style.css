@@ -5,6 +5,10 @@
     --text-cta: #e2dada;
 }
 
+body {
+    background-color: var(--primary-color);
+}
+
 
 /*TYPOGRAFHY*/
 
@@ -13,13 +17,13 @@ h1 {
     color: var(--primary-color);
 }
 
+.text-mygreen {
+    color: var(--primary-color);
+}
+
 #navbar {
     z-index: 9999;
     transition: 1s;
-}
-
-.bg-green {
-    background-color: var(--primary-color);
 }
 
 .navbar-icon {
@@ -39,6 +43,8 @@ header {
     width: 500px;
 }
 
-#btn-CTA {
+#btn-CTA,
+#navbarCTAScroll {
+    background-color: var(--primary-color);
     color: var(--text-cta);
 }
