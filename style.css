@@ -3,6 +3,7 @@
     --text-color: #fff;
     --text-shadow-primary: #818f82;
     --text-cta: #e2dada;
+    --border-custom: #55858e;
 }
 
 body {
@@ -57,6 +58,18 @@ header {
     width: 300px;
 }
 
+.border-right-custom {
+    border-right: groove 10px var(--border-custom);
+}
+
+.border-left-custom {
+    border-left: groove 10px var(--border-custom);
+}
+
+.border-bottom-custom {
+    border-bottom: groove 10px var(--border-custom);
+}
+
 
 /*BOTTONI CTA*/
 
@@ -83,4 +96,6 @@ header {
 
 main.form {
     padding-top: 200px;
+    box-shadow: var(--primary-color) 0.2rem;
+    color: var(--text-cta);
 }
