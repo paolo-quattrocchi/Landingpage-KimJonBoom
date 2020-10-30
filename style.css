@@ -3,6 +3,7 @@
     --text-color: #fff;
     --text-shadow-primary: #818f82;
     --text-cta: #e2dada;
+    --border-custom: #55858e;
 }
 
 body {
@@ -53,4 +54,13 @@ header {
 #navbarCTAScroll {
     background-color: var(--primary-color);
     color: var(--text-cta);
+}
+.border-right-custom{
+    border-right: groove 10px var(--border-custom) ;
+}
+.border-left-custom{
+    border-left: groove 10px var(--border-custom) ;
+}
+.border-bottom-custom{
+    border-bottom: groove 10px var(--border-custom);
 }
