@@ -48,3 +48,33 @@ header {
     background-color: var(--primary-color);
     color: var(--text-cta);
 }
+
+.over-card {
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.over-img {
+    transition: 1s;
+}
+
+.over-card:hover .over-img {
+    transform: scale(1.1)
+}
+
+.card {
+    padding: 0px;
+    border: 0px;
+}
+
+.bg-section-cta {
+    height: 400px;
+    background: url(./media/Foto1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-verical-size {
+    height: 200px;
+}
