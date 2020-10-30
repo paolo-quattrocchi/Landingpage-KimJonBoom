@@ -18,8 +18,11 @@ h1 {
 }
 
 .text-mygreen {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
+
+
+/*NAVBAR*/
 
 #navbar {
     z-index: 9999;
@@ -29,6 +32,9 @@ h1 {
 .navbar-icon {
     height: 60px;
 }
+
+
+/*HEADER*/
 
 header {
     height: 100vh;
@@ -43,14 +49,38 @@ header {
     width: 500px;
 }
 
-.img-staff{
+
+/*CHI SIAMO*/
+
+.img-staff {
     height: 300px;
     width: 300px;
 }
 
 
+/*BOTTONI CTA*/
+
+.btn-CTA,
 #btn-CTA,
 #navbarCTAScroll {
-    background-color: var(--primary-color);
-    color: var(--text-cta);
+    background-color: var(--primary-color) !important;
+    color: var(--text-cta) !important;
+}
+
+
+/*FORM*/
+
+.form-control {
+    border: 1px solid var(--primary-color)
+}
+
+.form-control:focus {
+    border-color: var(--border-custom);
+}
+
+
+/*PAGINA FORM*/
+
+main.form {
+    padding-top: 200px;
 }
