@@ -3,6 +3,7 @@
     --text-color: #fff;
     --text-shadow-primary: #818f82;
     --text-cta: #e2dada;
+    --border-custom: #55858e;
 }
 
 body {
@@ -18,8 +19,11 @@ h1 {
 }
 
 .text-mygreen {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
+
+
+/*NAVBAR*/
 
 #navbar {
     z-index: 9999;
@@ -29,6 +33,9 @@ h1 {
 .navbar-icon {
     height: 60px;
 }
+
+
+/*HEADER*/
 
 header {
     height: 100vh;
@@ -43,9 +50,53 @@ header {
     width: 500px;
 }
 
+
+/*CHI SIAMO*/
+
+.img-staff {
+    height: 300px;
+    width: 300px;
+}
+
+.border-right-custom {
+    border-right: groove 10px var(--border-custom);
+}
+
+.border-left-custom {
+    border-left: groove 10px var(--border-custom);
+}
+
+.border-bottom-custom {
+    border-bottom: groove 10px var(--border-custom);
+}
+
+
+/*BOTTONI CTA*/
+
+.btn-CTA,
 #btn-CTA,
 #navbarCTAScroll {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
+    color: var(--text-cta) !important;
+}
+
+
+/*FORM*/
+
+.form-control {
+    border: 1px solid var(--primary-color)
+}
+
+.form-control:focus {
+    border-color: var(--border-custom);
+}
+
+
+/*PAGINA FORM*/
+
+main.form {
+    padding-top: 200px;
+    box-shadow: var(--primary-color) 0.2rem;
     color: var(--text-cta);
 }
 
