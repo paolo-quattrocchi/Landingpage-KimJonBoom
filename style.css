@@ -1,123 +1,133 @@
-                  :root {
-                     --primary-color: #c8ad55;
-                     --third-color: #7FB685;
-                     --text-color: #fff;
-                     --text-shadow-primary: #818f82;
-                     --text-cta: #fff;
-                     --border-custom: #55858e;
-                 }
-                 
-                 html {
-                     scroll-behavior: smooth;
-                 }
-                 
-                 body {
-                     background-color: var(--primary-color);
-                 }
-                 /*TYPOGRAFHY*/
-                 
-                 h1 {
-                     text-shadow: 2px 2px var(--text-shadow-primary);
-                     color: var(--primary-color);
-                 }
-                 
-                 .text-mygreen {
-                     color: var(--primary-color) !important;
-                 }
-                 /*NAVBAR*/
-                 
-                 #navbar {
-                     z-index: 9999;
-                     transition: 1s;
-                 }
-                 
-                 .navbar-icon {
-                     height: 60px;
-                 }
-                 /*HEADER*/
-                 
-                 header {
-                     height: 100vh;
-                     min-height: 500px;
-                     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
-                     background-size: cover;
-                     background-position: center;
-                     background-repeat: no-repeat;
-                 }
-                 
-                 .img-header {
-                     width: 500px;
-                 }
-                 /*CHI SIAMO*/
-                 
-                 .img-staff {
-                     height: 300px;
-                     width: 300px;
-                 }
-                 
-                 .border-right-custom {
-                     border-right: groove 10px var(--border-custom);
-                 }
-                 
-                 .border-left-custom {
-                     border-left: groove 10px var(--border-custom);
-                 }
-                 
-                 .border-bottom-custom {
-                     border-bottom: groove 10px var(--border-custom);
-                 }
-                 /*BOTTONI CTA*/
-                 
-                 .btn-CTA,
-                 #btn-CTA,
-                 #navbarCTAScroll {
-                     background-color: var(--third-color) !important;
-                     color: var(--text-cta) !important;
-                 }
-                 /*FORM*/
-                 
-                 .form-control {
-                     border: 1px solid var(--primary-color)
-                 }
-                 
-                 .form-control:focus {
-                     border-color: var(--border-custom);
-                     box-shadow: 0 0 0 0.2rem rgba(85, 133, 142, .25);
-                 }
-                 /*PAGINA FORM*/
-                 
-                 main.form {
-                     padding-top: 200px;
-                     box-shadow: var(--primary-color) 0.2rem;
-                     color: var(--text-cta);
-                 }
-                 
-                 .over-card {
-                     position: relative;
-                     overflow: hidden;
-                     transition: 1s;
-                 }
-                 
-                 .over-img {
-                     transition: 1s;
-                 }
-                 
-                 .over-card:hover .over-img {
-                     transform: scale(1.1)
-                 }
-                 
-                 .card {
-                     padding: 0px;
-                     border: 0px;
-                 }
-                 
-                 .bg-section-cta {
-                     height: 400px;
-                     background: url(./media/Foto1.jpg);
-                     background-size: cover;
-                     background-position: center;
-                 }
-                 
-                 .img-verical-size {
-                     height: 200px;
-                 }
+:root {
+    --primary-color: #c8ad55;
+    --third-color: #7FB685;
+    --text-color: #fff;
+    --text-shadow-primary: #818f82;
+    --text-cta: #fff;
+    --border-custom: #55858e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+
+/*TYPOGRAFHY*/
+
+h1 {
+    text-shadow: 2px 2px var(--text-shadow-primary);
+    color: var(--primary-color);
+}
+
+.text-mygreen {
+    color: var(--primary-color) !important;
+}
+
+
+/*NAVBAR*/
+
+#navbar {
+    z-index: 9999;
+    transition: 1s;
+}
+
+.navbar-icon {
+    height: 60px;
+}
+
+
+/*HEADER*/
+
+header {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*CHI SIAMO*/
+
+.img-staff {
+    height: 300px;
+    width: 300px;
+}
+
+.border-right-custom {
+    border-right: groove 10px var(--border-custom);
+}
+
+.border-left-custom {
+    border-left: groove 10px var(--border-custom);
+}
+
+.border-bottom-custom {
+    border-bottom: groove 10px var(--border-custom);
+}
+
+
+/*BOTTONI CTA*/
+
+.btn-CTA,
+#btn-CTA,
+#navbarCTAScroll {
+    background-color: var(--third-color) !important;
+    color: var(--text-cta) !important;
+}
+
+
+/*FORM*/
+
+.form-control {
+    border: 1px solid var(--primary-color)
+}
+
+.form-control:focus {
+    border-color: var(--border-custom);
+    box-shadow: 0 0 0 0.2rem rgba(85, 133, 142, .25);
+}
+
+
+/*PAGINA FORM*/
+
+main.form {
+    padding-top: 200px;
+    box-shadow: var(--primary-color) 0.2rem;
+    color: var(--text-cta);
+}
+
+.over-card {
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.over-img {
+    transition: 1s;
+}
+
+.over-card:hover .over-img {
+    transform: scale(1.1)
+}
+
+.card {
+    padding: 0px;
+    border: 0px;
+}
+
+.bg-section-cta {
+    height: 400px;
+    background: url(./media/Foto1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-verical-size {
+    height: 200px;
+}
