@@ -2,7 +2,7 @@
     --primary-color: #c8ad55;
     --third-color: #7FB685;
     --text-color: #fff;
-    --text-shadow-primary: #818f82;
+    --text-shadow-primary: rgba(0, 0, 0, 0.7);
     --text-cta: #fff;
     --border-custom: #55858e;
 }
@@ -49,6 +49,46 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.mt-header-custom {
+    margin-top: 10%;
+}
+
+
+/*xl*/
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .col-xl-7-custom {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-xl-5-custom {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}
+
+
+/*md e sm*/
+
+@media screen and (min-width: 576px)and (max-width: 991px) {
+    .mt-header-custom {
+        margin-top: 30%;
+        text-align: center;
+    }
+}
+
+
+/*xs*/
+
+@media screen and (max-width: 575px) {
+    .mt-header-custom {
+        text-align: center;
+        align-self: center!important;
+    }
 }
 
 
