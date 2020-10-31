@@ -126,6 +126,10 @@ main.form {
     background-position: center;
 }
 
-.img-verical-size {
-    height: 200px;
+.card-body {
+    height: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
