@@ -72,13 +72,16 @@ header {
 }
 
 
-
 /*BOTTONI CTA*/
 
 .btn-CTA,
 #btn-CTA,
 #navbarCTAScroll {
+<<<<<<< HEAD
     background-color: var(--primary-color) !important;
+=======
+    background-color: var(--third-color) !important;
+>>>>>>> b02723ed87ddaab4cae23a326d31488e1180a516
     color: var(--text-cta) !important;
 }
 
@@ -255,3 +258,6 @@ main.form {
                  .img-verical-size {
                      height: 200px;
                  }
+.img-verical-size {
+    height: 200px;
+}
