@@ -272,6 +272,18 @@ header {
     box-shadow: 0 0 0 0.2rem rgba(85, 133, 142, .25);
 }
 
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: none !important;
+    background-color: var(--border-custom)!important;
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::after {
+    background-image: none !important;
+    background-color: white!important;
+    border: 2px solid var(--border-custom);
+    border-radius: 4px;
+}
+
 
 /*PAGINA FORM*/
 

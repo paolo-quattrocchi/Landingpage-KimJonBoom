@@ -285,42 +285,50 @@
         <div class="row justify-content-center">
             <div class="col-10 col-md-6">
                 <form class="text-dark" action="form.html" id="form-CTA">
-                    <div class="form-row ">
-                        <div class="form-group col-md-6 ">
-                            <label for="inputNome ">Nome</label>
-                            <input type="text " class="form-control " id="formNome " placeholder="Mario ">
+
+                    <p class="h3 mb-5 text-center">Scrivici</p>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputNome">Il tuo nome</label>
+                            <input type="text" class="form-control" id="formNome" placeholder="Mario">
                         </div>
-                        <div class="form-group col-md-6 ">
-                            <label for="inputCognome ">Cognome</label>
-                            <input type="text " class="form-control " id="formCognome " placeholder="Rossi ">
+                        <div class="form-group col-md-6">
+                            <label for="inputCognome">Il tuo cognome</label>
+                            <input type="text" class="form-control" id="formCognome" placeholder="Rossi">
                         </div>
                     </div>
 
-                    <div class="form-row ">
-                        <div class="form-group col-md-6 ">
-                            <label for="inputEmail ">Email</label>
-                            <input type="email " class="form-control " id="formEmail " placeholder="email@gmail.com ">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Il tuo indirizzo email</label>
+                            <input type="email" class="form-control" id="formEmail" placeholder="mario.rossi@gmail.com">
                         </div>
                         <div class="form-group col-md-6 ">
-                            <label for="inputTelefono ">Telefono</label>
-                            <input type="text " class="form-control " id="formTelefono " placeholder="0952468752 ">
+                            <label for="inputTelefono">Il tuo numero di telefono</label>
+                            <input type="text" class="form-control" id="formTelefono" placeholder="1234567890">
                         </div>
                     </div>
 
-                    <div class="form-row ">
-                        <div class="form-group col-md-6 ">
-                            <label for="inputCittà ">Città</label>
-                            <input type="text " class="form-control " id="formCittà " placeholder="Roma ">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCittà">La tua città</label>
+                            <input type="text" class="form-control" id="formCittà" placeholder="Roma">
                         </div>
-                        <div class="form-group col-md-6 ">
-                            <label for="inputVia ">Via</label>
-                            <input type="text " class="form-control " id="inputAddress " placeholder="Via Cesare Battisti ">
+                        <div class="form-group col-md-6">
+                            <label for="inputVia">La tua via</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Via Cesare Battisti">
                         </div>
+                    </div>
+
+                    <div class="custom-control custom-checkbox mb-4 text-center">
+                        <input type="checkbox" class="custom-control-input" id="privacy">
+                        <label class="custom-control-label text-secondary font-italic" for="privacy">Accetto termini e condizioni</label>
                     </div>
 
                     <!-- Ho creato un mockup, perché per poter inviare direttamente un'email senza utilizzare outlook mi serve la parte di backend-->
-                    <div class="row justify-content-center ">
-                        <button type="submit " class="btn-CTA btn px-4 rounded-pill text-uppercase shadow font-weight-bold ">
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn-CTA btn px-4 rounded-pill text-uppercase shadow font-weight-bold">
                             Prenota
                         </button>
                     </div>
