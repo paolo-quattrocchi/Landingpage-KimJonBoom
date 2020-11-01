@@ -93,6 +93,35 @@ header {
 }
 
 
+/*Animazione*/
+
+#animation1 {
+    animation: animation1 3s;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#animation2 {
+    animation: animation2 3s;
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateY(1000px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 /*CHI SIAMO*/
 
 .img-staff {
@@ -111,6 +140,7 @@ header {
 .border-bottom-custom {
     border-bottom: groove 10px var(--border-custom);
 }
+
 
 /*Vantaggi di viaggiare*/
 
@@ -144,6 +174,7 @@ header {
     height: 100px;
 }
 
+
 /*BOTTONI CTA*/
 
 .btn-CTA,
@@ -153,10 +184,11 @@ header {
     color: var(--text-cta) !important;
 }
 
+
 /*Offerte*/
 
 .text1 {
-    background-image: linear-gradient( rgba(0,0,0,1), rgba(0, 0, 0, 0)) ,url(./media/rubbish\ dump.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/rubbish\ dump.jpeg);
     margin: 0px;
     height: 500px;
     color: white;
@@ -165,7 +197,7 @@ header {
 }
 
 .text2 {
-    background-image: linear-gradient( rgba(0,0,0,1), rgba(0, 0, 0, 0)) ,url(./media/loser.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/loser.jpeg);
     margin: 0px;
     height: 500px;
     color: white;
@@ -174,13 +206,13 @@ header {
 }
 
 .text3 {
-    background-image: linear-gradient( rgba(0,0,0,1), rgba(0, 0, 0, 0)) ,url(./media/sea.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/sea.jpeg);
     margin: 0px;
     height: 500px;
     color: white;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;  
+    background-position: center;
 }
 
 .bg-section-cta2 {
@@ -193,6 +225,7 @@ header {
 .test {
     padding-top: 19vmin;
 }
+
 
 /*FORM*/
 
@@ -214,19 +247,21 @@ main.form {
     color: var(--text-cta);
 }
 
-
 .gift {
     background-image: url(./media/Air\ Koryo\ Sunan_International_Airport\,_Pyongyang\,_North_Korea-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
 /* CORNICE FEEDBACK */
 
-.shadow-custom{
+.shadow-custom {
     box-shadow: 0px 4px 8px black;
     border-radius: 6px;
 }
-.radius-custom{
+
+.radius-custom {
     border-radius: 6px;
 }
