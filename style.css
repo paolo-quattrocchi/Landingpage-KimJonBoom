@@ -3,6 +3,7 @@
     --third-color: #D84727;
     --text-color: #fff;
     --text-shadow-primary: rgba(255, 255, 255, 0.7);
+    --linear-gradient-img: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     --text-cta: #fff;
     --border-custom: #5EB1BF;
 }
@@ -46,7 +47,7 @@ h1 {
 header {
     height: 100vh;
     min-height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
+    background: var(--linear-gradient-img), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,27 +123,7 @@ header {
 }
 
 
-/*CHI SIAMO*/
-
-.img-staff {
-    height: 300px;
-    width: 300px;
-}
-
-.border-right-custom {
-    border-right: groove 10px var(--border-custom);
-}
-
-.border-left-custom {
-    border-left: groove 10px var(--border-custom);
-}
-
-.border-bottom-custom {
-    border-bottom: groove 10px var(--border-custom);
-}
-
-
-/*Vantaggi di viaggiare*/
+/*PERCHÈ VIAGGIARE*/
 
 .over-card {
     position: relative;
@@ -185,7 +166,7 @@ header {
 }
 
 
-/*Offerte*/
+/*LE NOSTRE OFFERTE*/
 
 .text1 {
     background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/rubbish\ dump.jpeg);
@@ -227,6 +208,59 @@ header {
 }
 
 
+/* FEEDBACK */
+
+.shadow-custom {
+    box-shadow: 0px 4px 8px black;
+    border-radius: 6px;
+}
+
+.radius-custom {
+    border-radius: 6px;
+}
+
+
+/*COUNTDOWN*/
+
+.bg-section-timer {
+    height: 300px;
+    background: var(--linear-gradient-img), url(./media/Air\ Koryo\ Sunan_International_Airport\,_Pyongyang\,_North_Korea-1.jpg);
+    text-shadow: 2px 2px var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*xs*/
+
+@media screen and (max-width:767px) {
+    .bg-section-timer {
+        height: 450px;
+    }
+}
+
+
+/*CHI SIAMO*/
+
+.img-staff {
+    height: 300px;
+    width: 300px;
+}
+
+.border-right-custom {
+    border-right: groove 10px var(--border-custom);
+}
+
+.border-left-custom {
+    border-left: groove 10px var(--border-custom);
+}
+
+.border-bottom-custom {
+    border-bottom: groove 10px var(--border-custom);
+}
+
+
 /*FORM*/
 
 .form-control {
@@ -252,16 +286,4 @@ main.form {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-
-/* CORNICE FEEDBACK */
-
-.shadow-custom {
-    box-shadow: 0px 4px 8px black;
-    border-radius: 6px;
-}
-
-.radius-custom {
-    border-radius: 6px;
 }
