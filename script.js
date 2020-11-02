@@ -19,6 +19,8 @@ if (window.innerWidth > 576) {
             navbar.classList.add('bg-transparent')
             navbarTextLogo.classList.add('text-white')
             navbarTextLogo.classList.remove('text-mygreen')
+            navbarCTAScroll.classList.remove('btn-sm')
+
         }
 
 
@@ -29,7 +31,12 @@ if (window.innerWidth > 576) {
         }
     })
 } else {
-    navbarBrand.classList.add('bg-light')
+    navbar.classList.add('bg-light', 'shadow')
+    navbar.classList.remove('bg-transparent')
+    navbarTextLogo.classList.add('text-mygreen')
+    navbarTextLogo.classList.remove('text-white')
+    navbarCTAScroll.classList.remove('d-none')
+    navbarCTAScroll.classList.add('btn-sm')
 }
 
 
