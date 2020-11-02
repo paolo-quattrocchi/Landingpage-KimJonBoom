@@ -19,7 +19,7 @@ body {
 
 /*TYPOGRAFHY*/
 
-h1 {
+h1, .h1 {
     text-shadow: 2px 2px var(--text-shadow-primary);
     color: var(--primary-color);
 }
@@ -158,29 +158,37 @@ header {
 .text1 {
     background-image: linear-gradient( rgba(0,0,0,1), rgba(0, 0, 0, 0)) ,url(./media/rubbish\ dump.jpeg);
     margin: 0px;
-    height: 500px;
+    height: 100%;
     color: white;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .text2 {
     background-image: linear-gradient( rgba(0,0,0,1), rgba(0, 0, 0, 0)) ,url(./media/loser.jpeg);
     margin: 0px;
-    height: 500px;
+    height: 100%;
     color: white;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .text3 {
     background-image: linear-gradient( rgba(0,0,0,1), rgba(0, 0, 0, 0)) ,url(./media/sea.jpeg);
     margin: 0px;
-    height: 500px;
+    height: 100%; 
     color: white;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;  
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;  
 }
 
 .bg-section-cta2 {
@@ -191,7 +199,11 @@ header {
 }
 
 .test {
-    padding-top: 19vmin;
+    padding-top: 4vmin;
+}
+
+.contenitore {
+    font-size: 100%;
 }
 
 /*FORM*/
