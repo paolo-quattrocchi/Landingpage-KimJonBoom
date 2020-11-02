@@ -3,9 +3,10 @@ let navbar = document.querySelector('#navbar')
 let navbarBrand = document.querySelector('#navbarBrand')
 let navbarTextLogo = document.querySelector('#navbarTextLogo')
 let navbarCTAScroll = document.querySelector('#navbarCTAScroll')
+let navbarIcona = document.querySelector('#navbarIcona')
 
 //Dallo schermo sm a xl
-if (window.innerWidth > 576) {
+if (window.innerWidth > 575) {
     document.addEventListener('scroll', () => {
         //Il logo con la navbar compaiono solo quando si inizia a scrollare la pagina
 
@@ -14,13 +15,14 @@ if (window.innerWidth > 576) {
             navbar.classList.add('bg-light', 'shadow')
             navbarTextLogo.classList.add('text-mygreen')
             navbarTextLogo.classList.remove('text-white')
+            navbarIcona.classList.remove('d-none')
         } else {
             navbar.classList.remove('bg-light', 'shadow')
             navbar.classList.add('bg-transparent')
             navbarTextLogo.classList.add('text-white')
             navbarTextLogo.classList.remove('text-mygreen')
             navbarCTAScroll.classList.remove('btn-sm')
-
+            navbarIcona.classList.remove('d-none')
         }
 
 
@@ -31,6 +33,9 @@ if (window.innerWidth > 576) {
         }
     })
 } else {
+
+    navbarIcona.classList.add('d-none')
+
     navbar.classList.add('bg-light', 'shadow')
     navbar.classList.remove('bg-transparent')
     navbarTextLogo.classList.add('text-mygreen')
