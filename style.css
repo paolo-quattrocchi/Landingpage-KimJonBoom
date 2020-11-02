@@ -311,7 +311,16 @@ main.form {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
 /* FOOTER */
+
+
 .half-hr{
     width: 120px;
     height: 2px;
