@@ -20,7 +20,7 @@ body {
 
 /*TYPOGRAFHY*/
 
-h1 {
+h1, .h1 {
     text-shadow: 2px 2px var(--text-shadow-primary);
     color: var(--primary-color);
 }
@@ -171,29 +171,37 @@ header {
 .text1 {
     background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/rubbish\ dump.jpeg);
     margin: 0px;
-    height: 500px;
+    height: 100%;
     color: white;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .text2 {
     background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/loser.jpeg);
     margin: 0px;
-    height: 500px;
+    height: 100%;
     color: white;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .text3 {
     background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/sea.jpeg);
     margin: 0px;
-    height: 500px;
+    height: 100%; 
     color: white;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center;
+    position: relative;  
 }
 
 .bg-section-cta2 {
@@ -204,7 +212,11 @@ header {
 }
 
 .test {
-    padding-top: 19vmin;
+    padding-top: 4vmin;
+}
+
+.contenitore {
+    font-size: 100%;
 }
 
 
@@ -270,6 +282,18 @@ header {
 .form-control:focus {
     border-color: var(--border-custom);
     box-shadow: 0 0 0 0.2rem rgba(85, 133, 142, .25);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: none !important;
+    background-color: var(--border-custom)!important;
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::after {
+    background-image: none !important;
+    background-color: white!important;
+    border: 2px solid var(--border-custom);
+    border-radius: 4px;
 }
 
 
