@@ -8,6 +8,10 @@
     --border-custom: #5EB1BF;
 }
 
+* {
+    font-family: 'Lora', serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,6 +33,11 @@ h1, .h1 {
     color: var(--primary-color) !important;
 }
 
+.h1-cta {
+    color: var(--border-custom) !important;
+    text-shadow: 2px 2px black;
+}
+
 
 /*NAVBAR*/
 
@@ -47,7 +56,7 @@ h1, .h1 {
 header {
     height: 100vh;
     min-height: 500px;
-    background: var(--linear-gradient-img), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
+    background: var(--linear-gradient-img), url('./media/viaggiatori.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,7 +155,7 @@ header {
 
 .bg-section-cta {
     height: 500px;
-    background: url(./media/CTA2.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),  url(./media/CTA2.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -206,7 +215,7 @@ header {
 
 .bg-section-cta2 {
     height: 500px;
-    background: url(./media/explosions.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(./media/explosions.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -236,7 +245,7 @@ header {
 
 .bg-section-timer {
     height: 300px;
-    background: var(--linear-gradient-img), url(./media/Air\ Koryo\ Sunan_International_Airport\,_Pyongyang\,_North_Korea-1.jpg);
+    background: var(--linear-gradient-img), url(./media/bg_form.jpg);
     text-shadow: 2px 2px var(--primary-color);
     background-size: cover;
     background-position: center;
@@ -306,7 +315,7 @@ main.form {
 }
 
 .gift {
-    background-image: url(./media/Air\ Koryo\ Sunan_International_Airport\,_Pyongyang\,_North_Korea-1.jpg);
+    background-image: url(./media/bg_form.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -315,8 +324,31 @@ main.form {
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: 15px;
 }
 
+
+
+@media screen and (max-width: 575px) {
+    div.misuraTesto {
+        
+        font-size: 22px;
+        
+    }
+    .responsive {
+        width: 30%;
+        height: auto;
+    }
+    
+    .misuraLegge {
+        
+        font-size: 10px;
+    }
+    
+    main.form {
+        padding-top: 150px
+    }
+}
 
 /* FOOTER */
 
