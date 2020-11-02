@@ -287,3 +287,13 @@ main.form {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+/* FOOTER */
+.half-hr{
+    width: 120px;
+    height: 2px;
+    background: var(--third-color);
+}
+.title-footer{
+   text-shadow: 2px 2px var(--text-shadow-primary);
+   color: var(--third-color);
+}
