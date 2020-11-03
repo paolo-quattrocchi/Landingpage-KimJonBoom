@@ -1,305 +1,366 @@
-                 :root {
-                    --primary-color: #042A2B;
-                    --third-color: #D84727;
-                    --text-color: #fff;
-                    --text-shadow-primary: rgba(255, 255, 255, 0.7);
-                    --linear-gradient-img: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-                    --text-cta: #fff;
-                    --border-custom: #5EB1BF;
-                }
-                
-                html {
-                    scroll-behavior: smooth;
-                }
-                
-                body {
-                    background-color: var(--primary-color);
-                    color: var(--text-color);
-                }
-                /*TYPOGRAFHY*/
-                
-                h1,
-                .h1 {
-                    text-shadow: 2px 2px var(--text-shadow-primary);
-                    color: var(--primary-color);
-                }
-                
-                .h1-cta {
-                    color: var(--border-custom);
-                    text-shadow: 2px 2px black;
-                }
-                
-                @media screen and (max-width: 575px) {
-                    .h1-countdown {
-                        font-size: 25px;
-                    }
-                }
-                
-                .text-mygreen {
-                    color: var(--primary-color) !important;
-                }
-                /*NAVBAR*/
-                
-                #navbar {
-                    z-index: 9999;
-                    transition: 1s;
-                }
-                
-                .navbar-icon {
-                    height: 60px;
-                }
-                /*HEADER*/
-                
-                header {
-                    height: 100vh;
-                    min-height: 500px;
-                    background: var(--linear-gradient-img), url('./media/viaggiatori\ convertiti\ al\ regime\ di\ Kim\ \(interesse\).jpeg');
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                
-                .mt-header-custom {
-                    margin-top: 10%;
-                }
-                /*xl*/
-                
-                @media screen and (min-width: 1200px) and (max-width: 1400px) {
-                    .col-xl-7-custom {
-                        -ms-flex: 0 0 58.333333%;
-                        flex: 0 0 58.333333%;
-                        max-width: 58.333333%;
-                    }
-                    .col-xl-5-custom {
-                        -ms-flex: 0 0 41.666667%;
-                        flex: 0 0 41.666667%;
-                        max-width: 41.666667%;
-                    }
-                }
-                /*md e sm*/
-                
-                @media screen and (min-width: 576px)and (max-width: 991px) {
-                    .mt-header-custom {
-                        margin-top: 30%;
-                        text-align: center;
-                    }
-                }
-                /*xs*/
-                
-                @media screen and (max-width: 575px) {
-                    .mt-header-custom {
-                        text-align: center;
-                        align-self: center!important;
-                    }
-                }
-                /*Animazione*/
-                
-                #animation1 {
-                    animation: animation1 3s;
-                }
-                
-                @keyframes animation1 {
-                    0% {
-                        transform: translateX(-1000px);
-                    }
-                    100% {
-                        transform: translateX(0px);
-                    }
-                }
-                
-                #animation2 {
-                    animation: animation2 3s;
-                }
-                
-                @keyframes animation2 {
-                    0% {
-                        transform: translateY(1000px);
-                    }
-                    100% {
-                        transform: translateY(0px);
-                    }
-                }
-                /*PERCHÈ VIAGGIARE*/
-                
-                .over-card {
-                    position: relative;
-                    overflow: hidden;
-                    transition: 1s;
-                }
-                
-                .over-img {
-                    transition: 1s;
-                }
-                
-                .over-card:hover .over-img {
-                    transform: scale(1.1)
-                }
-                
-                .card {
-                    padding: 0px;
-                    border: 0px;
-                }
-                
-                .bg-section-cta {
-                    height: 500px;
-                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./media/CTA2.jpeg);
-                    background-size: cover;
-                    background-position: center;
-                }
-                
-                .card-body {
-                    height: 100px;
-                }
-                /*BOTTONI CTA*/
-                
-                .btn-CTA,
-                #btn-CTA,
-                #navbarCTAScroll {
-                    background-color: var(--third-color) !important;
-                    color: var(--text-cta) !important;
-                }
-                /*LE NOSTRE OFFERTE*/
-                
-                .text1 {
-                    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/rubbish\ dump.jpeg);
-                    margin: 0px;
-                    height: 100%;
-                    color: white;
-                    background-size: cover;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    position: relative;
-                }
-                
-                .text2 {
-                    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/loser.jpeg);
-                    margin: 0px;
-                    height: 100%;
-                    color: white;
-                    background-size: cover;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    position: relative;
-                }
-                
-                .text3 {
-                    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/sea.jpeg);
-                    margin: 0px;
-                    height: 100%;
-                    color: white;
-                    background-size: cover;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    position: relative;
-                }
-                
-                .bg-section-cta2 {
-                    height: 500px;
-                    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./media/explosions.jpeg);
-                    background-size: cover;
-                    background-position: center;
-                }
-                
-                .test {
-                    padding-top: 4vmin;
-                }
-                
-                .contenitore {
-                    font-size: 100%;
-                }
-                /* FEEDBACK */
-                
-                .shadow-custom {
-                    box-shadow: 0px 4px 8px black;
-                    border-radius: 6px;
-                }
-                
-                .radius-custom {
-                    border-radius: 6px;
-                }
-                /*COUNTDOWN*/
-                
-                .bg-section-timer {
-                    height: 400px;
-                    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./media/Air\ Koryo\ Sunan_International_Airport\,_Pyongyang\,_North_Korea-1.jpg);
-                    text-shadow: 2px 2px var(--primary-color);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                /*xs*/
-                
-                @media screen and (max-width:767px) {
-                    .bg-section-timer {
-                        height: 450px;
-                    }
-                }
-                /*CHI SIAMO*/
-                
-                .img-staff {
-                    height: 300px;
-                    width: 300px;
-                }
-                
-                .border-right-custom {
-                    border-right: groove 10px var(--border-custom);
-                }
-                
-                .border-left-custom {
-                    border-left: groove 10px var(--border-custom);
-                }
-                
-                .border-bottom-custom {
-                    border-bottom: groove 10px var(--border-custom);
-                }
-                /*FORM*/
-                
-                .form-control {
-                    border: 1px solid var(--primary-color)
-                }
-                
-                .form-control:focus {
-                    border-color: var(--border-custom);
-                    box-shadow: 0 0 0 0.2rem rgba(85, 133, 142, .25);
-                }
-                
-                .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-                    background-image: none !important;
-                    background-color: var(--border-custom)!important;
-                }
-                
-                .custom-checkbox .custom-control-input~.custom-control-label::after {
-                    background-image: none !important;
-                    background-color: white!important;
-                    border: 2px solid var(--border-custom);
-                    border-radius: 4px;
-                }
-                /*PAGINA FORM*/
-                
-                main.form {
-                    padding-top: 200px;
-                    box-shadow: var(--primary-color) 0.2rem;
-                    color: var(--text-cta);
-                }
-                
-                .gift {
-                    background-image: url(./media/Air\ Koryo\ Sunan_International_Airport\,_Pyongyang\,_North_Korea-1.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                }
-                /* FOOTER */
-                
-                .half-hr {
-                    width: 120px;
-                    height: 2px;
-                    background: var(--third-color);
-                }
-                
-                .title-footer {
-                    text-shadow: 2px 2px var(--text-shadow-primary);
-                    color: var(--third-color);
-                }
+:root {
+    --primary-color: #042A2B;
+    --third-color: #D84727;
+    --text-color: #fff;
+    --text-shadow-primary: rgba(255, 255, 255, 0.7);
+    --linear-gradient-img: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    --text-cta: #fff;
+    --border-custom: #5EB1BF;
+}
+
+* {
+    font-family: 'Lora', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+/*TYPOGRAFHY*/
+
+h1,
+.h1 {
+    text-shadow: 2px 2px var(--text-shadow-primary);
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+    .h1-countdown {
+        font-size: 25px;
+    }
+}
+
+.text-mygreen {
+    color: var(--primary-color) !important;
+}
+
+.h1-cta {
+    color: var(--border-custom) !important;
+    text-shadow: 2px 2px black;
+}
+
+
+/*NAVBAR*/
+
+#navbar {
+    z-index: 9999;
+    transition: 1s;
+}
+
+.navbar-icon {
+    height: 60px;
+}
+
+
+/*HEADER*/
+
+header {
+    height: 100vh;
+    min-height: 500px;
+    background: var(--linear-gradient-img), url('./media/viaggiatori.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mt-header-custom {
+    margin-top: 10%;
+}
+
+
+/*xl*/
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .col-xl-7-custom {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-xl-5-custom {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}
+
+
+/*md e sm*/
+
+@media screen and (min-width: 576px)and (max-width: 991px) {
+    .mt-header-custom {
+        margin-top: 30%;
+        text-align: center;
+    }
+}
+
+
+/*xs*/
+
+@media screen and (max-width: 575px) {
+    .mt-header-custom {
+        text-align: center;
+        align-self: center!important;
+    }
+}
+
+
+/*Animazione*/
+
+#animation1 {
+    animation: animation1 3s;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#animation2 {
+    animation: animation2 3s;
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateY(1000px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*PERCHÈ VIAGGIARE*/
+
+.over-card {
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.over-img {
+    transition: 1s;
+}
+
+.over-card:hover .over-img {
+    transform: scale(1.1)
+}
+
+.card {
+    padding: 0px;
+    border: 0px;
+}
+
+.bg-section-cta {
+    height: 500px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/CTA2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    height: 100px;
+}
+
+
+/*BOTTONI CTA*/
+
+.btn-CTA,
+#btn-CTA,
+#navbarCTAScroll {
+    background-color: var(--third-color) !important;
+    color: var(--text-cta) !important;
+}
+
+
+/*LE NOSTRE OFFERTE*/
+
+.text1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/rubbish\ dump.jpeg);
+    margin: 0px;
+    height: 100%;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.text2 {
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/loser.jpeg);
+    margin: 0px;
+    height: 100%;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.text3 {
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./media/sea.jpeg);
+    margin: 0px;
+    height: 100%;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.bg-section-cta2 {
+    height: 500px;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./media/explosions.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.test {
+    padding-top: 4vmin;
+}
+
+.contenitore {
+    font-size: 100%;
+}
+
+
+/* FEEDBACK */
+
+.shadow-custom {
+    box-shadow: 0px 4px 8px black;
+    border-radius: 6px;
+}
+
+.radius-custom {
+    border-radius: 6px;
+}
+
+
+/*COUNTDOWN*/
+
+.bg-section-timer {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./media/bg_form.jpg);
+    text-shadow: 2px 2px var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*xs*/
+
+@media screen and (max-width:767px) {
+    .bg-section-timer {
+        height: 500px;
+    }
+}
+
+
+/*CHI SIAMO*/
+
+.img-staff {
+    height: 300px;
+    width: 300px;
+}
+
+.border-right-custom {
+    border-right: groove 10px var(--border-custom);
+}
+
+.border-left-custom {
+    border-left: groove 10px var(--border-custom);
+}
+
+.border-bottom-custom {
+    border-bottom: groove 10px var(--border-custom);
+}
+
+
+/*FORM*/
+
+.form-control {
+    border: 1px solid var(--primary-color)
+}
+
+.form-control:focus {
+    border-color: var(--border-custom);
+    box-shadow: 0 0 0 0.2rem rgba(85, 133, 142, .25);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: none !important;
+    background-color: var(--border-custom)!important;
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::after {
+    background-image: none !important;
+    background-color: white!important;
+    border: 2px solid var(--border-custom);
+    border-radius: 4px;
+}
+
+
+/*PAGINA FORM*/
+
+main.form {
+    padding-top: 200px;
+    box-shadow: var(--primary-color) 0.2rem;
+    color: var(--text-cta);
+}
+
+.gift {
+    background-image: url(./media/bg_form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 575px) {
+    div.misuraTesto {
+        font-size: 22px;
+    }
+    .responsive {
+        width: 30%;
+        height: auto;
+    }
+    .misuraLegge {
+        font-size: 10px;
+    }
+    main.form {
+        padding-top: 150px
+    }
+}
+
+
+/* FOOTER */
+
+.half-hr {
+    width: 120px;
+    height: 2px;
+    background: var(--third-color);
+}
+
+.title-footer {
+    text-shadow: 2px 2px var(--text-shadow-primary);
+    color: var(--third-color);
+}
